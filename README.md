@@ -41,11 +41,11 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## 🎮 Playground
 
-- [Site](https://www.advogadaamandaferraz.com/)
+- [Site](https://filomenaleitao.pt/)
 
 ## 📝 Licença
 
-<p>© 2023 AMANDA FERRAZ. Todos os direitos reservados.</p>
+<p>© 2024 FILOMENA LEITAO. Todos os direitos reservados.</p>
 ---
 
 <p align="center">Desenvolvido com 💜 por Vandesson Santiago | Desenvolvedor React & Node</p>
