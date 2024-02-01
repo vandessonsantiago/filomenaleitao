@@ -1,7 +1,5 @@
 <div align="center">
 
-[![FILOMENA LEITAO](https://www.advogadaamandaferraz.com/_next/image?url=%2Famandaferraz_logo.png&w=384&q=75)](https://www.advogadaamandaferraz.com/)
-
 </div>
 
 <p align="center">
@@ -20,7 +18,7 @@
 
 ## 💻 Projeto
 
-Criamos um website com NextJS e integramos o WordPress com GraphQL para renderizar os posts do [blog da Dra. Amanda Ferraz](https://www.advogadaamandaferraz.com/blog/nacionalidade-portuguesa-por-atribuicao-e-naturalizacao-entenda) 💜 
+Criamos um website com NextJS e integramos o WordPress com GraphQL para renderizar os posts do [blog da Dra. Filomena Leitão](https://www.filomenaleitao.pt) 💜 
 
 
 ## 🚀 Tecnologias
