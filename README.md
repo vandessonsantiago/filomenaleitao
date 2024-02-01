@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
 
-## Getting Started
+[![FILOMENA LEITAO](https://www.advogadaamandaferraz.com/_next/image?url=%2Famandaferraz_logo.png&w=384&q=75)](https://www.advogadaamandaferraz.com/)
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-hosting">Hospedagem</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-playground">Playground</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+   <img  src="https://img.shields.io/static/v1?label=license&message=Copyright&color=8257E6&labelColor=121214" alt="License">
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 💻 Projeto
 
-To learn more about Next.js, take a look at the following resources:
+Criamos um website com NextJS e integramos o WordPress com GraphQL para renderizar os posts do [blog da Dra. Amanda Ferraz](https://www.advogadaamandaferraz.com/blog/nacionalidade-portuguesa-por-atribuicao-e-naturalizacao-entenda) 💜 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Tecnologias
 
-## Deploy on Vercel
+Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [NextJS](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [WordPress](https://pt.wordpress.org/)
+- [GraphQL](https://graphql.org/)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🌐 Hospedagem
+
+- [Vercel - diretório do projeto/servidor NodeJS](https://vercel.com/dashboard)
+- [Hostinger - Wordpress](https://www.hostinger.com/)
+- [Dreamhost - Domínio principal](https://www.dreamhost.com/)
+
+
+## 🎮 Playground
+
+- [Site](https://www.advogadaamandaferraz.com/)
+
+## 📝 Licença
+
+<p>© 2023 AMANDA FERRAZ. Todos os direitos reservados.</p>
+---
+
+<p align="center">Desenvolvido com 💜 por Vandesson Santiago | Desenvolvedor React & Node</p>
+
+
