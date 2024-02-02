@@ -1,13 +1,14 @@
 import React, { CSSProperties } from 'react';
+import ContactoComponent from './contacto';
 
 const UnderConstructionMessage: React.FC = () => {
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Site em Construção</h1>
+      <h1 style={styles.title}>EM CONSTRUÇÃO</h1>
       <p style={styles.message}>
-        Estamos trabalhando para criar um espaço acolhedor. Em breve, estaremos disponíveis para ajudar. Enquanto isso, sinta-se à vontade para entrar em contato conosco pelo telefone +351 916 445 826.
+        Estamos trabalhando para criar um espaço acolhedor. Em breve, estaremos disponíveis para ajudar. Cadastre seu email para ser avisado sobre o lançamento do website.
       </p>
-      <p></p>
+      <ContactoComponent />
     </div>
   );
 };
@@ -29,8 +30,9 @@ const styles: Styles = {
   },
   title: {
     fontSize: '2em',
-    marginBottom: '1em',
+    marginBottom: '.5em',
     color: '#333',
+    fontWeight: 'bold',
   },
   message: {
     fontSize: '1.2em',
