@@ -65,15 +65,20 @@ export default function ContactoComponent() {
                </button>
              </div>
             </div>
-             <div>
-             {errors.email?.type === "required" && (
-                 <span className="text-red-400">Este campo é obrigatório</span>
-               )}
-               {errors.email?.type === "pattern" && (
-                 <span className="text-red-400">Insira um email válido</span>
-               )}
-              {isSubmitting ? (<span className="text-green-400">Você será avisado quando o site for publicado.</span>) : ""}
-             </div>
+            <div>
+  {isSubmitting ? (
+    <span className="text-green-400">Você será avisado quando o site for publicado.</span>
+  ) : (
+    <>
+      {errors.email?.type === "required" && (
+        <span className="text-red-400">Este campo é obrigatório</span>
+      )}
+      {errors.email?.type === "pattern" && (
+        <span className="text-red-400">Insira um email válido</span>
+      )}
+    </>
+  )}
+</div>
            </form>
          </main>
        </div>
