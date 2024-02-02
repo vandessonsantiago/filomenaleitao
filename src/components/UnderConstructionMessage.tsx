@@ -5,7 +5,7 @@ const UnderConstructionMessage: React.FC = () => {
     <div style={styles.container}>
       <h1 style={styles.title}>Site em Construção</h1>
       <p style={styles.message}>
-        Estamos trabalhando para criar um espaço acolhedor. Em breve, estaremos disponíveis para ajudar. Enquanto isso, sinta-se à vontade para entrar em contato conosco por e-mail ou telefone.
+        Estamos trabalhando para criar um espaço acolhedor. Em breve, estaremos disponíveis para ajudar. Enquanto isso, sinta-se à vontade para entrar em contato conosco pelo telefone +351 916 445 826.
       </p>
       <p></p>
     </div>
