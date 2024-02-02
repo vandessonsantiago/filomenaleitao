@@ -50,7 +50,7 @@ export default function ContactoComponent() {
                    pattern: /^\S+@\S+$/i,
                  })}
                  className="border-2 border-green-200 p-2 rounded w-[300px]"
-                 placeholder="Enserir um email válido"
+                 placeholder="Ex.: seunome@email.com"
                />
              </div>
              <div className="flex justify-center my-8">
