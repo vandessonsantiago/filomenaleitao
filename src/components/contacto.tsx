@@ -42,7 +42,7 @@ export default function ContactoComponent() {
        >
          <main>
            <form onSubmit={handleSubmit(Submit)}>
-            <div className="flex items-center">
+            <div className="lg:flex items-center">
             <div className="flex flex-col mx-2 my-4">
                <input
                  {...register("email", {
@@ -53,7 +53,7 @@ export default function ContactoComponent() {
                  placeholder="Ex.: seunome@email.com"
                />
              </div>
-             <div className="flex justify-center my-8">
+             <div className="flex justify-center my-4">
                <button
                  type="submit"
                  role="link"
@@ -66,19 +66,19 @@ export default function ContactoComponent() {
              </div>
             </div>
             <div>
-  {isSubmitting ? (
-    <span className="text-green-400">Você será avisado quando o site for publicado.</span>
-  ) : (
-    <>
-      {errors.email?.type === "required" && (
-        <span className="text-red-400">Este campo é obrigatório</span>
-      )}
-      {errors.email?.type === "pattern" && (
-        <span className="text-red-400">Insira um email válido</span>
-      )}
-    </>
-  )}
-</div>
+              {isSubmitting ? (
+                <span className="text-green-400">Você será avisado quando o site for publicado.</span>
+              ) : (
+                <>
+                  {errors.email?.type === "required" && (
+                    <span className="text-red-400">Este campo é obrigatório</span>
+                  )}
+                  {errors.email?.type === "pattern" && (
+                    <span className="text-red-400">Insira um email válido</span>
+                  )}
+                </>
+              )}
+            </div>
            </form>
          </main>
        </div>
