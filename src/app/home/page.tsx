@@ -76,7 +76,53 @@ export default function Home() {
               src="/logo_filomena_leitao_img.png"
             />
           </div>
-          <div>
+          <div
+            id="menu-horizontal"
+            className="hidden lg:flex items-center gap-1"
+          >
+            <Box
+              p="20px"
+              onClick={HandleScrollInicio}
+              className="cursor-pointer"
+            >
+              <p className="text-sm font-bold text-[#9ECBA1]">Início</p>
+            </Box>
+            <Box
+              p="20px"
+              onClick={HandleScrollAtendimento}
+              className="cursor-pointer"
+            >
+              <p className="text-sm font-bold text-[#9ECBA1]">Atendimento</p>
+            </Box>
+            <Box
+              p="20px"
+              onClick={HandleScrollSobre}
+              className="cursor-pointer"
+            >
+              <p className="text-sm font-bold text-[#9ECBA1]">Sobre mim</p>
+            </Box>
+            <Box
+              p="20px"
+              onClick={HandleScrollAcolhidos}
+              className="cursor-pointer"
+            >
+              <p className="text-sm font-bold text-[#9ECBA1]">Acolhidos</p>
+            </Box>
+            <Box p="20px" onClick={HandleScrollFAQ} className="cursor-pointer">
+              <p className="text-sm font-bold text-[#9ECBA1]">FAQ</p>
+            </Box>
+            <Button
+              leftIcon={<CalendarIcon />}
+              variant="solid"
+              bg="#9ECBA1"
+              _hover={{ bg: "#9ECBA1" }}
+              color="white"
+              onClick={HandleSubmit}
+            >
+              Agendamento
+            </Button>
+          </div>
+          <div id="menu-hamburger" className="lg:hidden">
             <IconButton
               onClick={toggleView}
               className="mr-2"
@@ -146,11 +192,8 @@ export default function Home() {
           </Box>
         </Collapse>
       </header>
-      <main className="flex flex-col">
-        <div
-          id="inicio"
-          className="h-[620px] bg-gradient-to-r from-neutral-950 to-neutral-700 p-2 relative"
-        >
+      <section className="h-[620px] bg-gradient-to-r from-neutral-950 to-neutral-700 p-2 relative">
+        <div id="inicio" className="lg:max-w-5xl lg:m-auto">
           <div className="flex items-center gap-1 px-4 pt-4">
             <p className="text-xs text-white font-semibold min-w-fit">
               Psicóloga Filomena Leitão
@@ -187,7 +230,7 @@ export default function Home() {
               </Flex>
             </div>
           </div>
-          <div className="absolute bottom-0 left-3">
+          <div className="absolute bottom-0 left-0 right-0 flex justify-center">
             <Image
               width="350"
               height="200"
@@ -196,6 +239,8 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+      <main className="flex flex-col lg:max-w-5xl lg:m-auto">
         <div id="atendimento" className="m-4">
           <div className="flex items-center gap-1">
             <p className="text-xs font-semibold min-w-fit">Atendimento</p>
@@ -391,7 +436,7 @@ export default function Home() {
               Meu atendimento é direcionado para:
             </p>
           </div>
-          <div className="xs:flex-col">
+          <div className="flex-col flex gap-2 lg:flex-row">
             <Center className="relative w-[340px] h-[360px] my-2 bg-black rounded-md">
               <Image
                 width="340"
@@ -460,43 +505,47 @@ export default function Home() {
           <Faq />
         </div>
       </main>
-      <footer className="bg-[#edf2f6] p-2">
-        <div className="flex justify-center items-center">
-          <Image
-            width="200"
-            height="80"
-            alt="Logotipo"
-            src="/logo_filomena_leitao_img.png"
-          />
-        </div>
-        <div className="flex flex-col justify-center items-center content-center p-2">
-          <Flex alignItems="center" gap={1}>
-            <MdOutlineEmail />
-            <p className="text-xs">filomenaleitao@gmail.com</p>
-          </Flex>
-          <Flex alignItems="center" gap={1}>
-            <PiInstagramLogo />
-            <p className="text-xs">filomenaleitao.psicologia</p>
-          </Flex>
-          <p className="text-xs">OPP 11040</p>
+      <footer className="bg-[#edf2f6] p-2 ">
+        <div className="lg:flex justify-between items-center gap-2 lg:max-w-5xl lg:m-auto">
+          <div className="flex justify-center items-center">
+            <Image
+              width="200"
+              height="80"
+              alt="Logotipo"
+              src="/logo_filomena_leitao_img.png"
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center content-center p-2">
+            <Flex alignItems="center" gap={1}>
+              <MdOutlineEmail />
+              <p className="text-xs">filomenaleitao@gmail.com</p>
+            </Flex>
+            <Flex alignItems="center" gap={1}>
+              <PiInstagramLogo />
+              <p className="text-xs">filomenaleitao.psicologia</p>
+            </Flex>
+            <p className="text-xs">OPP 11040</p>
+          </div>
+          <div>
+            <Center>
+              <Button
+                leftIcon={<CalendarIcon />}
+                variant="outline"
+                colorScheme=""
+                onClick={HandleSubmit}
+              >
+                Agendamento
+              </Button>
+            </Center>
+          </div>
         </div>
         <div>
-          <Center>
-            <Button
-              leftIcon={<CalendarIcon />}
-              variant="outline"
-              colorScheme=""
-              onClick={HandleSubmit}
-            >
-              Agendamento
-            </Button>
-          </Center>
-        </div>
-        <div className="h-[1px] bg-black mx-2 my-4"></div>
-        <div>
-          <p className="text-center px-10 text-xs">
-            ©2024 Filomena Leitão – Todos os direitos reservados
-          </p>
+          <div className="h-[1px] bg-black mx-2 my-4"></div>
+          <div>
+            <p className="text-center px-10 text-xs">
+              ©2024 Filomena Leitão – Todos os direitos reservados
+            </p>
+          </div>
         </div>
       </footer>
     </>
