@@ -1,6 +1,6 @@
 "use client"
 import Faq from "@/components/faq"
-import { CalendarIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons"
+import { CalendarIcon, CloseIcon } from "@chakra-ui/icons"
 import {
   Box,
   Button,
@@ -23,7 +23,6 @@ import {
 
 export default function Home() {
   const [isMenuVisible, setIsMenuVisible] = useState(false)
-
   const toggleView = () => {
     setIsMenuVisible((prev) => !prev)
   }
@@ -78,7 +77,7 @@ export default function Home() {
           </div>
           <div
             id="menu-horizontal"
-            className="hidden lg:flex items-center gap-1"
+            className="hidden tablet:flex items-center gap-1"
           >
             <Box
               p="20px"
@@ -122,7 +121,7 @@ export default function Home() {
               Agendamento
             </Button>
           </div>
-          <div id="menu-hamburger" className="lg:hidden">
+          <div id="menu-hamburger" className="tablet:hidden">
             <IconButton
               onClick={toggleView}
               className="mr-2"
@@ -192,55 +191,71 @@ export default function Home() {
           </Box>
         </Collapse>
       </header>
-      <section className="h-[620px] bg-gradient-to-r from-neutral-950 to-neutral-700 p-2 relative">
-        <div id="inicio" className="lg:max-w-5xl lg:m-auto">
-          <div className="flex items-center gap-1 px-4 pt-4">
+      <section className="bg-gradient-to-r from-neutral-950 to-neutral-700">
+        <div id="inicio" className="tablet:max-w-5xl tablet:m-auto">
+          <div className="flex items-center gap-1 px-2 pt-4">
             <p className="text-xs text-white font-semibold min-w-fit">
               Psicóloga Filomena Leitão
             </p>
             <div className="w-12 bg-[#9ECBA1] h-[2px]"></div>
           </div>
-          <div className="p-4">
-            <p className="text-white font-semibold text-lg">
-              Dê um novo significado a sua vida e crie uma nova forma de vida.
-            </p>
-            <p className="text-white text-xs mt-2">
-              Suporte abrangente e eficaz para ajudar os indivíduos a enfrentar
-              seus desafios emocionais e alcançar seu pleno potencial.
-            </p>
-            <div className="mt-4">
-              <Flex gap={1}>
-                <Button
-                  leftIcon={<CalendarIcon />}
-                  variant="outline"
-                  color="#9ECBA1"
-                  borderColor="#9ECBA1"
-                  onClick={HandleSubmit}
-                >
-                  Agendamento
-                </Button>
-                <Button
-                  variant="outline"
-                  color="#FFF"
-                  borderColor="#FFF"
-                  onClick={HandleScrollAtendimento}
-                >
-                  Saiba mais
-                </Button>
-              </Flex>
+          <div className="pt-4 flex flex-col tablet:flex-row tablet:justify-center tablet:items-center">
+            <div className="flex items-center h-full">
+              <div className="mx-2">
+                <p className="text-2xl tablet:text-4xl font-extrabold text-white antialiased">
+                  Dê um novo significado a sua vida e crie uma nova forma de
+                  vida.
+                </p>
+                <p className="text-lg tablet:text-xl text-white mt-2">
+                  Suporte abrangente e eficaz para ajudar os indivíduos a
+                  enfrentar seus desafios emocionais e alcançar seu pleno
+                  potencial.
+                </p>
+                <div className="mt-4">
+                  <Flex gap={1}>
+                    <Button
+                      leftIcon={<CalendarIcon />}
+                      variant="outline"
+                      color="#9ECBA1"
+                      borderColor="#9ECBA1"
+                      onClick={HandleSubmit}
+                    >
+                      Agendamento
+                    </Button>
+                    <Button
+                      variant="outline"
+                      color="#FFF"
+                      borderColor="#FFF"
+                      onClick={HandleScrollAtendimento}
+                    >
+                      Saiba mais
+                    </Button>
+                  </Flex>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="absolute bottom-0 left-0 right-0 flex justify-center">
-            <Image
-              width="350"
-              height="200"
-              alt="Logotipo"
-              src="/Filo_real.png"
-            />
+            <div className="h-max flex items-end mobile:justify-center">
+              <div className="mobile:block tablet:hidden flex justify-center">
+                <Image
+                  width="450"
+                  height="200"
+                  alt="Logotipo"
+                  src="/Filo_real.png"
+                />
+              </div>
+              <div className="hidden tablet:block">
+                <Image
+                  width="770"
+                  height="200"
+                  alt="Logotipo"
+                  src="/Filo_real.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <main className="flex flex-col lg:max-w-5xl lg:m-auto">
+      <main className="flex flex-col tablet:max-w-5xl tablet:m-auto">
         <div id="atendimento" className="m-4">
           <div className="flex items-center gap-1">
             <p className="text-xs font-semibold min-w-fit">Atendimento</p>
@@ -356,74 +371,79 @@ export default function Home() {
         <div className="my-2">
           <div className="h-[1px] bg-gray-800 mx-4"></div>
         </div>
-        <Center p={4} className="flex-col">
-          <div className="flex items-center justify-center gap-2 my-2">
-            <div>
+        <div className="flex flex-col tablet:flex-row tablet:justify-around tablet:py-12 tablet:px-4">
+          <div>
+            <Center p={4} className="flex-col">
+              <div className="flex items-center justify-center gap-2 my-2">
+                <div>
+                  <Image
+                    width="30"
+                    height="30"
+                    alt="Logotipo"
+                    src="/psicologia.png"
+                  />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-center">
+                    Licenciada em Psicologia Clínica - Uminho.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-2 my-2">
+                <div>
+                  <PiGraduationCapThin size={38} />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-center">
+                    Mestre em Psicologia Clínica - Uminho.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-2 my-2">
+                <div>
+                  <PiBooksThin size={38} />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-center">
+                    Pós-graduação em Psicopatologia da Criança e do Adolescente.
+                  </p>
+                  <p className="text-xs font-semibold text-center">
+                    Pós-graduação em Neuroeducação nas Dificuldades de
+                    Aprendizagem.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-2 my-2">
+                <div>
+                  <PiBrainThin size={38} />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-center">
+                    Várias formações em Educação e Saúde mental.
+                  </p>
+                </div>
+              </div>
+            </Center>
+          </div>
+          <div className="">
+            <Center className="relative">
               <Image
-                width="30"
-                height="30"
+                width="240"
+                height="100"
+                className="rounded-md"
                 alt="Logotipo"
-                src="/psicologia.png"
+                src="/filomena_foto.png"
               />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-center">
-                Licenciada em Psicologia Clínica - Uminho.
+              <div className="bottom-2 left-20 absolute text-white">
+                <p className="text-xs font-bold">Filomena Leitão</p>
+                <p className="text-xs">Psicóloga | OPP 11040</p>
+              </div>
+            </Center>
+            <div className="mt-4">
+              <p className="text-xs text-center font-semibold">
+                ver currículo completo
               </p>
             </div>
-          </div>
-          <div className="flex items-center justify-center gap-2 my-2">
-            <div>
-              <PiGraduationCapThin size={38} />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-center">
-                Mestre em Psicologia Clínica - Uminho.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center justify-center gap-2 my-2">
-            <div>
-              <PiBooksThin size={38} />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-center">
-                Pós-graduação em Psicopatologia da Criança e do Adolescente.
-              </p>
-              <p className="text-xs font-semibold text-center">
-                Pós-graduação em Neuroeducação nas Dificuldades de Aprendizagem.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center justify-center gap-2 my-2">
-            <div>
-              <PiBrainThin size={38} />
-            </div>
-            <div>
-              <p className="text-xs font-semibold text-center">
-                Várias formações em Educação e Saúde mental.
-              </p>
-            </div>
-          </div>
-        </Center>{" "}
-        <div>
-          <Center className="relative">
-            <Image
-              width="240"
-              height="100"
-              className="rounded-md"
-              alt="Logotipo"
-              src="/filomena_foto.png"
-            />
-            <div className="bottom-2 left-20 absolute text-white">
-              <p className="text-xs font-bold">Filomena Leitão</p>
-              <p className="text-xs">Psicóloga | OPP 11040</p>
-            </div>
-          </Center>
-          <div className="mt-4">
-            <p className="text-xs text-center font-semibold">
-              ver currículo completo
-            </p>
           </div>
         </div>
         <div id="acolhidos" className="m-4">
@@ -436,7 +456,7 @@ export default function Home() {
               Meu atendimento é direcionado para:
             </p>
           </div>
-          <div className="flex-col flex gap-2 lg:flex-row">
+          <div className="flex-col flex gap-2 tablet:flex-row tablet:justify-around">
             <Center className="relative w-[340px] h-[360px] my-2 bg-black rounded-md">
               <Image
                 width="340"
@@ -505,8 +525,8 @@ export default function Home() {
           <Faq />
         </div>
       </main>
-      <footer className="bg-[#edf2f6] p-2 ">
-        <div className="lg:flex justify-between items-center gap-2 lg:max-w-5xl lg:m-auto">
+      <footer className="bg-[#edf2f6] p-2 tablet:py-16">
+        <div className="tablet:flex justify-between items-center gap-2 tablet:max-w-5xl tablet:m-auto">
           <div className="flex justify-center items-center">
             <Image
               width="200"
