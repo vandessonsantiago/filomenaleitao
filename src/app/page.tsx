@@ -456,7 +456,7 @@ export default function Home() {
               Meu atendimento é direcionado para:
             </p>
           </div>
-          <div className="flex-col flex gap-2 tablet:flex-row tablet:justify-around">
+          <div className="flex flex-col gap-2 items-center tablet:flex-row tablet:justify-around">
             <Center className="relative w-[340px] h-[360px] my-2 bg-black rounded-md">
               <Image
                 width="340"
