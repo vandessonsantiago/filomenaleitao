@@ -19,14 +19,15 @@
     ".prettierrc": "json",
     "*.css": "tailwindcss"
   },
+
   //explorer
   "explorer.compactFolders": false,
   // workbench
   "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
-
+  "workbench.colorTheme": "Omni",
   // prettier
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  //"editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.enable": true,
   "prettier.singleQuote": false,
   "prettier.tabWidth": 2,
@@ -37,5 +38,13 @@
     "Git Bash": {
       "source": "Git Bash"
     }
-  }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "cSpell.words": ["insira", "Mundo", "tailwindcss"],
+  "tailwindCSS.lint.invalidScreen": "error",
+  "tailwindCSS.lint.invalidTailwindDirective": "error",
+  "tailwindCSS.lint.invalidVariant": "error",
+  "tailwindCSS.lint.invalidConfigPath": "error",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }

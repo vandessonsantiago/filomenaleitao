@@ -84,31 +84,41 @@ export default function Home() {
               onClick={HandleScrollInicio}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Início</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">
+                Início
+              </p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollAtendimento}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Atendimento</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">
+                Atendimento
+              </p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollSobre}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Sobre mim</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">
+                Sobre mim
+              </p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollAcolhidos}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Público-Alvo</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">
+                Público-Alvo
+              </p>
             </Box>
             <Box p="20px" onClick={HandleScrollFAQ} className="cursor-pointer">
-              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">FAQ</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">
+                FAQ
+              </p>
             </Box>
             <Button
               leftIcon={<CalendarIcon />}
@@ -204,8 +214,8 @@ export default function Home() {
               <div className="flex items-center h-full">
                 <div className="mx-2">
                   <p className="text-2xl tablet:text-4xl font-extrabold text-white antialiased">
-                    Dar um novo significado à nossa vida e criar uma nova
-                    filosofia de vida!
+                    Cuide da sua saúde mental. Dê um novo significado às suas
+                    experiências de vida!
                   </p>
                   <p className="text-lg tablet:text-xl text-white mt-2">
                     Tenho uma missão de vida apaixonante que não pretendo
@@ -213,15 +223,15 @@ export default function Home() {
                   </p>
                   <div className="mt-4">
                     <Flex gap={1}>
-                        <Button
-                          leftIcon={<CalendarIcon />}
-                          background="#688AB6"
-                          variant="outline"
-                          color="#fff"
-                          borderColor="#688AB6"
-                          onClick={HandleSubmit}
-                          _hover={{ background: "#688AB6", color: "#fff" }}
-                        >
+                      <Button
+                        leftIcon={<CalendarIcon />}
+                        background="#688AB6"
+                        variant="outline"
+                        color="#fff"
+                        borderColor="#688AB6"
+                        onClick={HandleSubmit}
+                        _hover={{ background: "#688AB6", color: "#fff" }}
+                      >
                         Agendamento
                       </Button>
                       <Button
@@ -271,52 +281,37 @@ export default function Home() {
           </div>
           <div className="my-2">
             <p className="font-bold text-lg tablet:my-8 tablet:text-3xl">
-              Quem precisa de atendimento Psicológico?
+              Quem precisa de acompanhamento Psicológico?
             </p>
-            <p className="mobile:text-base table:text-lg mt-1">
+            <p className="mobile:text-base table:text-lg mt-[6px]">
               Qualquer pessoa que em algum momento da sua vida esteja com alguma
               dificuldade em encontrar as melhores estratégias para enfrentar os
               desafios do quotidiano, sejam dificuldades pessoais ou quaisquer
-              situação que nos deixam confusos e sobrecarregados para estar apto
-              a tomar decisões. Isto acontece a qualquer um de nós. É
+              situações que nos deixam confusos e sobrecarregados para estarmos
+              aptos a tomar decisões. Isto acontece a qualquer um de nós. É
               perfeitamente normal sentir-se assim!
             </p>
-
-            <p className="mobile:text-base table:text-lg mt-1">
+            <p className="mobile:text-base table:text-lg mt-[6px]">
               No entanto, se esses sentimentos persistirem e começarem a afetar
-              significativamente nossa qualidade de vida e bem-estar, pode ser a
-              hora de procurar ajuda profissional. Esqueçam aquele mito “os
-              psicólogos são para os malucos”. Nunca na minha vida conheci um
-              “maluco” no meu consultório.
+              significativamente a nossa qualidade de vida e bem-estar, pode ser
+              o momento de procurar ajuda profissional. Independentemente do
+              motivo, é importante lembrar que procurar ajuda psicológica não é
+              um sinal de fraqueza, mas sim de coragem e autocuidado e é o
+              primeiro passo para a resolução do problema.
             </p>
-
-            <p className="mobile:text-base table:text-lg mt-1">
-              O atendimento psicológico, ou a intervenção psicológica oferece um
-              espaço seguro e confidencial para explorar seus pensamentos,
-              emoções e comportamentos de uma forma que talvez não seja possível
-              com amigos ou familiares. Um psicólogo treinado pode ajudá-lo a
-              entender melhor a origem dos seus problemas, oferecer perspetivas
-              novas e saudáveis, e fornecer ferramentas e estratégias para
-              enfrentar e superar os desafios.
+            <p className="mobile:text-base table:text-lg mt-[6px]">
+              O acompanhamento psicológico, ou a intervenção psicológica,
+              oferece um espaço seguro e confidencial para explorar os seus
+              pensamentos, emoções e comportamentos, fornecendo ferramentas e
+              estratégias para enfrentar e superar os desafios.
             </p>
-
-            <p className="mobile:text-base table:text-lg mt-1">
-              Independentemente do motivo, é importante lembrar que procurar
-              ajuda psicológica não é um sinal de fraqueza, mas sim de coragem e
-              autocuidado e é o primeiro passo na resolução do problema.
+            <p className="mobile:text-base table:text-lg mt-[6px]">
+              Se se encontra numa fase mais difícil, de maior sobrecarga ou
+              sofrimento emocional, não hesite em procurar apoio psicológico.
             </p>
-
-            <p className="mobile:text-base table:text-lg mt-1">
-              Portanto, se se encontra numa fase mais difícil, mais
-              sobrecarregada, mais frustrada e cansada, não hesite em procurar o
-              apoio de que precisa. Numa primeira consulta encontra logo o
-              primeiro alívio nessa situação porque de organizou em voz alta.
-            </p>
-
-            <p className="mobile:text-base table:text-lg mt-1">
-              A saúde mental, felizmente, cada vez mais, tem sido vista pelos
-              profissionais e sociedade em geral com a uma importância que lhe é
-              merecida. Cuide dela para bem da sua saúde geral!
+            <p className="mobile:text-base table:text-lg mt-[6px]">
+              A saúde mental é, felizmente, cada vez mais uma prioridade no
+              contexto social atual. Cuide dela para bem da sua saúde geral!
             </p>
           </div>
           <div className="my-4 tablet:flex justify-center tablet:my-12">
@@ -395,7 +390,7 @@ export default function Home() {
             <p className="text-[16px] tablet:text-base">
               Os motivos das consultas são diversos, nomeadamente clínicos,
               escolares, relacionais… tenho a experiência e a compreensão
-              necessárias para lhe ajudar a atingir o seu máximo potencial.
+              necessárias para a/o ajudar a atingir o seu máximo potencial.
             </p>
           </div>
         </div>
@@ -416,7 +411,7 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-[16px] font-semibold text-center">
-                    Licenciada em Psicologia Clínica - Uminho.
+                    Licenciada em Psicologia - Uminho.
                   </p>
                 </div>
               </div>
@@ -442,6 +437,9 @@ export default function Home() {
                     Pós-graduação em Neuroeducação nas Dificuldades de
                     Aprendizagem.
                   </p>
+                  <p className="text-[16px] font-semibold text-center">
+                    Especialização em Educação pela OPP
+                  </p>
                 </div>
               </div>
               <div className="flex items-center justify-center gap-2 my-2">
@@ -456,18 +454,20 @@ export default function Home() {
               </div>
             </Center>
           </div>
-          <div className="">
+          <div>
             <Center className="relative">
               <Image
                 width="240"
                 height="100"
                 className="rounded-md"
                 alt="Logotipo"
-                src="/filomena_foto.png"
+                src="/perfil_filomena.png"
               />
-              <div className="bottom-2 left-20 absolute text-white">
-                <p className="text-[16px] font-bold">Filomena Leitão</p>
-                <p className="text-[16px]">Psicóloga | OPP 11040</p>
+              <div className="absolute bottom-2 left-4">
+                <p className="text-[14px] font-bold text-white">
+                  Filomena Leitão
+                </p>
+                <p className="text-[14px] text-white">Psicóloga | OPP 11040</p>
               </div>
             </Center>
             <div className="mt-4">
@@ -567,23 +567,27 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-center items-center content-center p-2">
               <Flex alignItems="center" gap={1}>
-                <MdOutlineEmail color="white"/>
-                <p className="text-[16px] text-white">filomenaleitao@gmail.com</p>
+                <MdOutlineEmail color="white" />
+                <p className="text-[16px] text-white">
+                  filomenaleitao@gmail.com
+                </p>
               </Flex>
               <Flex alignItems="center" gap={1}>
-                <PiInstagramLogo color="white"/>
-                <p className="text-[16px] text-white">filomenaleitao.psicologia</p>
+                <PiInstagramLogo color="white" />
+                <p className="text-[16px] text-white">
+                  filomenaleitao.psicologia
+                </p>
               </Flex>
               <p className="text-[16px] text-white">OPP 11040</p>
             </div>
             <div>
               <Center>
                 <Button
-                  leftIcon={<CalendarIcon  color="white"/>}
+                  leftIcon={<CalendarIcon color="white" />}
                   variant="outline"
                   colorScheme=""
-                  border='2px'
-                  borderColor='white'
+                  border="2px"
+                  borderColor="white"
                   onClick={HandleSubmit}
                   textColor="white"
                 >
