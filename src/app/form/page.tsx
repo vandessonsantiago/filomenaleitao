@@ -1,9 +1,9 @@
 "use client"
 import { fetchPostJSON } from "@/utils/api-helpers"
-import { Center } from "@chakra-ui/react"
+import { Center, Button} from "@chakra-ui/react"
 import Image from "next/image"
 import { useState } from "react"
-import { MdOutlineEmail, MdOutlineSmartphone, MdPhone } from "react-icons/md"
+import { MdOutlineEmail, MdOutlineSmartphone } from "react-icons/md"
 import { TbWorldWww } from "react-icons/tb"
 import { v4 as uuidv4 } from "uuid"
 import { useForm as hookForm } from "react-hook-form"
@@ -41,7 +41,7 @@ export default function Form() {
   }
 
   return (
-    <main className="bg-[#9ECBA1]">
+    <main className="bg-[#688AB6]">
       <form onSubmit={handleSubmit(Submit)}>
         <section className="max-w-5xl m-auto">
           <div className="flex flex-col items-center gap-3 ">
@@ -127,7 +127,7 @@ export default function Form() {
                     required: true,
                     pattern: /^\S+@\S+$/i,
                   })}
-                  className="border-2 border-green-200 p-2 rounded"
+                  className="border-2 border-[#c47b4e] p-2 rounded"
                   placeholder="Sua resposta, ex: Miguel Pereira Albuquerque"
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Form() {
                     required: true,
                     pattern: /^\S+@\S+$/i,
                   })}
-                  className="border-2 border-green-200 p-2 rounded"
+                  className="border-2 border-[#c47b4e] p-2 rounded"
                   placeholder="Sua resposta, ex: miguelpereira@mail.pt."
                 />
               </div>
@@ -153,7 +153,7 @@ export default function Form() {
                     required: true,
                     pattern: /^\S+@\S+$/i,
                   })}
-                  className="border-2 border-green-200 p-2 rounded"
+                  className="border-2 border-[#c47b4e] p-2 rounded"
                   placeholder="Sua resposta, ex: +351 999 999 999"
                 />
               </div>
@@ -161,7 +161,7 @@ export default function Form() {
             <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
               <p className="text-[0.9rem]">
                 A tua inscrição fica confirmada após realização de pagamento por
-                transferência bancária (IBAN PT50 ) ou
+                transferência bancária (IBAN PT50 001802330020004509134 ) ou
                 Mbway (916 445 826) e envio do comprovativo para
                 contacto@filomenaleitao.pt.
               </p>
@@ -185,7 +185,7 @@ export default function Form() {
                     required: true,
                     pattern: /^\S+@\S+$/i,
                   })}
-                  className="border-2 border-green-200 p-2 rounded"
+                  className="border-2 border-[#c47b4e] p-2 rounded"
                   placeholder="Sua resposta"
                 />
               </div>
@@ -193,15 +193,16 @@ export default function Form() {
             <div className="bg-white w-[640px] mb-8 rounded-2xl px-4 py-4 border-[1px] border-gray-400">
               <div className="flex justify-center bg-[rgba(244,244,244,0.60)] rounded-md">
                 <div className="flex items-end">
-                  <div className="bg-[#9ecba17e] w-[200px] h-[260px] rounded-t-full flex justify-center">
-                    <div className="bg-[#323232] rounded-full w-[180px] h-[180px] mt-3 flex justify-center items-center">
-                      <div className="rounded-full w-[170px] h-[170px]">
+                  <div className="w-[200px] h-[260px] rounded-t-full flex justify-center">
+                    <div className=" rounded-full mt-3 flex justify-center items-center">
+                      <div className="flex flex-col justify-center rounded-full w-[180px] h-[180px]">
                         <Image
-                          src="/avatar.png"
+                          src="/avatar_filomena_new.png"
                           alt="avatar"
                           width={500}
                           height={500}
                         />
+                        <p className="text-[14px] font-bold text-center">OPP 11040</p>
                       </div>
                     </div>
                   </div>
@@ -243,15 +244,15 @@ export default function Form() {
             </div>
           </div>
           <div className="flex justify-center pt-8 pb-24">
-            <button
-              type="submit"
-              role="link"
-              className={`py-2 px-10 bg-yellow-500 border-2 border-yellow-600 rounded-md cursor-pointer font-extrabold text-black ${
-                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-              }`} // Desativa o botão se estiver enviando
+            <Button
+            background="#c47b4e"
+            variant="outline"
+            color="#fff"
+            borderColor="#c47"
+            _hover={{ background: "#688AB6", color: "#fff" }}
             >
               ENVIAR A MINHA INSCRIÇÃO
-            </button>
+            </Button>
           </div>
         </section>
       </form>

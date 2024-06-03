@@ -84,31 +84,31 @@ export default function Home() {
               onClick={HandleScrollInicio}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#c47b4e]">Início</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Início</p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollAtendimento}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#c47b4e]">Atendimento</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Atendimento</p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollSobre}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#c47b4e]">Sobre mim</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Sobre mim</p>
             </Box>
             <Box
               p="20px"
               onClick={HandleScrollAcolhidos}
               className="cursor-pointer"
             >
-              <p className="text-sm font-bold text-[#c47b4e]">Público-Alvo</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">Público-Alvo</p>
             </Box>
             <Box p="20px" onClick={HandleScrollFAQ} className="cursor-pointer">
-              <p className="text-sm font-bold text-[#c47b4e]">FAQ</p>
+              <p className="text-sm font-bold text-[#688AB6] hover:text-[#c47b4e]">FAQ</p>
             </Box>
             <Button
               leftIcon={<CalendarIcon />}
@@ -213,20 +213,22 @@ export default function Home() {
                   </p>
                   <div className="mt-4">
                     <Flex gap={1}>
-                      <Button
-                        leftIcon={<CalendarIcon />}
-                        variant=""
-                        background="#688AB6"
-                        color="#fff"
-                        borderColor="#688AB6"
-                        onClick={HandleSubmit}
-                      >
+                        <Button
+                          leftIcon={<CalendarIcon />}
+                          background="#688AB6"
+                          variant="outline"
+                          color="#fff"
+                          borderColor="#688AB6"
+                          onClick={HandleSubmit}
+                          _hover={{ background: "#688AB6", color: "#fff" }}
+                        >
                         Agendamento
                       </Button>
                       <Button
                         variant="outline"
                         color="#FFF"
                         borderColor="#FFF"
+                        _hover={{ background: "#688AB6", color: "#fff" }}
                         onClick={HandleScrollAtendimento}
                       >
                         Saiba mais
@@ -240,7 +242,7 @@ export default function Home() {
                   <Image
                     width="350"
                     height="200"
-                    alt="Logotipo"
+                    alt="Filomena"
                     src="/filomena.svg"
                     className="rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl"
                   />
@@ -249,7 +251,7 @@ export default function Home() {
                   <Image
                     width="770"
                     height="200"
-                    alt="Logotipo"
+                    alt="Filomena"
                     src="/filomena.svg"
                     className="rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl"
                   />
@@ -591,7 +593,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <div className="h-[1px] bg-black mx-2 my-4"></div>
+            <div className="h-[1px] bg-white mx-2 my-4"></div>
             <div>
               <p className="text-white text-center px-10 text-[16px]">
                 ©2024 Filomena Leitão – Todos os direitos reservados
