@@ -213,16 +213,16 @@ export default function Home() {
             <div className="pt-4 flex flex-col tablet:flex-row tablet:justify-center tablet:items-center">
               <div className="flex items-center h-full">
                 <div className="mx-2">
-                  <p className="text-2xl tablet:text-4xl font-extrabold text-white antialiased">
+                  <p className="text-2xl text-center tablet:text-4xl tablet:text-start font-extrabold text-white antialiased">
                     Cuide da sua saúde mental. Dê um novo significado às suas
                     experiências de vida!
                   </p>
-                  <p className="text-lg tablet:text-xl text-white mt-2">
+                  <p className="text-lg text-center tablet:text-xl text-white mt-2 tablet:text-start">
                     Tenho uma missão de vida apaixonante que não pretendo
                     abdicar!
                   </p>
                   <div className="mt-4">
-                    <Flex gap={1}>
+                    <Flex gap={1} className="justify-center tablet:justify-start">
                       <Button
                         leftIcon={<CalendarIcon />}
                         background="#688AB6"
@@ -247,8 +247,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="h-max flex mobile:justify-center">
-                <div className="mobile:block py-4 flex tablet:hidden ">
+              <div className="h-max flex justify-center">
+                <div className="mobile:block py-4 flex justify-center tablet:hidden ">
                   <Image
                     width="350"
                     height="200"
@@ -315,7 +315,7 @@ export default function Home() {
             </p>
           </div>
           <div className="my-4 tablet:flex justify-center tablet:my-12">
-            <Flex gap={1}>
+            <Flex gap={1} className="justify-center tablet:justify-start">
               <Button
                 leftIcon={<CalendarIcon />}
                 variant="outline"
@@ -539,7 +539,7 @@ export default function Home() {
             </p>
           </div>
           <div className="my-4">
-            <Flex gap={1}>
+            <Flex gap={1} className="justify-center tablet:justify-start">
               <Button
                 leftIcon={<BsWhatsapp />}
                 variant="outline"
