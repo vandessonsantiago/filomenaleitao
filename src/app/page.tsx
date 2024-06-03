@@ -253,7 +253,7 @@ export default function Home() {
                     width="350"
                     height="200"
                     alt="Filomena"
-                    src="/filomena.svg"
+                    src="/filomena-img.png"
                     className="rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl"
                   />
                 </div>
@@ -262,7 +262,7 @@ export default function Home() {
                     width="770"
                     height="200"
                     alt="Filomena"
-                    src="/filomena.svg"
+                    src="/filomena-img.png"
                     className="rounded-tl-3xl rounded-tr-md rounded-bl-md rounded-br-3xl"
                   />
                 </div>
