@@ -463,7 +463,7 @@ export default function Home() {
                 alt="Logotipo"
                 src="/perfil_filomena.png"
               />
-              <div className="absolute bottom-2 left-[84px] tablet:left-4">
+              <div className="absolute bottom-2 left-[102px] tablet:left-4">
                 <p className="text-[12px] tablet:text-[14px] font-bold text-white">
                   Filomena Leitão
                 </p>
