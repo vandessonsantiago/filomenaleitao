@@ -1,6 +1,7 @@
 "use client";
 import Faq from "@/components/faq";
 import { CalendarIcon, CloseIcon } from "@chakra-ui/icons";
+import Link from "next/link";
 import {
   Box,
   Button,
@@ -475,17 +476,16 @@ export default function Home() {
                 </p>
               </div>
             </Center>
-            <a
+            <Link
               href="https://firebasestorage.googleapis.com/v0/b/filomena-2f8ff.appspot.com/o/CVFilomena.pdf?alt=media&token=be98b10f-6cc3-43cc-ac34-1cf58ce6d05c"
-              target="_blank"
-              rel="noopener noreferrer"
+              passHref
             >
-              <div className="mt-4 text-black font-bold py-2 px-4 text-center">
+              <div className="mt-4 text-black font-bold py-2 px-4 text-center cursor-pointer">
                 <p className="text-[16px] font-semibold">
                   ver currículo completo
                 </p>
               </div>
-            </a>{" "}
+            </Link>
           </div>
         </div>
         <div id="acolhidos" className="m-4">
