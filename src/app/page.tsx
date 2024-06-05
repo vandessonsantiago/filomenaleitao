@@ -222,7 +222,10 @@ export default function Home() {
                     abdicar!
                   </p>
                   <div className="mt-4">
-                    <Flex gap={1} className="justify-center tablet:justify-start">
+                    <Flex
+                      gap={1}
+                      className="justify-center tablet:justify-start"
+                    >
                       <Button
                         leftIcon={<CalendarIcon />}
                         background="#688AB6"
@@ -467,14 +470,22 @@ export default function Home() {
                 <p className="text-[12px] tablet:text-[14px] font-bold text-white">
                   Filomena Leitão
                 </p>
-                <p className="text-[12px] tablet:text-[14px] text-white">Psicóloga | OPP 11040</p>
+                <p className="text-[12px] tablet:text-[14px] text-white">
+                  Psicóloga | OPP 11040
+                </p>
               </div>
             </Center>
-            <div className="mt-4">
-              <p className="text-[16px] text-center font-semibold">
-                ver currículo completo
-              </p>
-            </div>
+            <a
+              href="https://firebasestorage.googleapis.com/v0/b/filomena-2f8ff.appspot.com/o/CVFilomena.pdf?alt=media&token=be98b10f-6cc3-43cc-ac34-1cf58ce6d05c"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="mt-4 text-black font-bold py-2 px-4 text-center">
+                <p className="text-[16px] font-semibold">
+                  ver currículo completo
+                </p>
+              </div>
+            </a>{" "}
           </div>
         </div>
         <div id="acolhidos" className="m-4">
