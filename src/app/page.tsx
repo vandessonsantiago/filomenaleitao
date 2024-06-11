@@ -9,9 +9,16 @@ import {
   Collapse,
   Flex,
   IconButton,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalFooter,
+  ModalOverlay,
+  useDisclosure,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -24,6 +31,7 @@ import {
 
 export default function Home() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const toggleView = () => {
     setIsMenuVisible((prev) => !prev);
   };
@@ -64,8 +72,32 @@ export default function Home() {
     }
   }
 
+  useEffect(() => {
+    onOpen(); // Abre o modal quando o componente é montado
+  }, [onOpen]);
+
   return (
     <>
+      <Modal
+        isCentered
+        onClose={onClose}
+        isOpen={isOpen}
+        motionPreset="slideInBottom"
+        size={"4xl"}
+      >
+        <ModalOverlay />
+        <ModalContent className="w-full">
+          <ModalCloseButton />
+          <Link href="/inscricao">
+            <Image
+              width="1000"
+              height="460"
+              alt="banner-formação"
+              src="/banner-image.png"
+            />
+          </Link>
+        </ModalContent>
+      </Modal>{" "}
       <header className="max-w-5xl m-auto">
         <div className="flex h-20 items-center justify-between">
           <div>
