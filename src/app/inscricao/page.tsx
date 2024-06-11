@@ -7,6 +7,7 @@ import { MdOutlineEmail, MdOutlineSmartphone } from "react-icons/md";
 import { TbWorldWww } from "react-icons/tb";
 import { v4 as uuidv4 } from "uuid";
 import { useForm as hookForm } from "react-hook-form";
+import Calendar from "@/components/calendar";
 
 export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,6 +116,9 @@ export default function Form() {
                   ligadas.
                 </p>
               </div>
+            </div>
+            <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
+              <Calendar />
             </div>
             <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
               <Center>
@@ -325,9 +329,8 @@ export default function Form() {
               color="#fff"
               borderColor="#c47"
               _hover={{ background: "#688AB6", color: "#fff" }}
-              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${
-                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-              }`} // Desativa o botão se estiver enviando
+              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                }`} // Desativa o botão se estiver enviando
             >
               ENVIAR A MINHA INSCRIÇÃO
             </Button>
