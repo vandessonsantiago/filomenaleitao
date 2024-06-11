@@ -49,9 +49,9 @@ export default function Form() {
   return (
     <main className="bg-[#688AB6]">
       <form onSubmit={handleSubmit(Submit)}>
-        <section className="max-w-5xl m-auto">
+        <section className="max-w-5xl mx-2 tablet:m-auto">
           <div className="flex flex-col items-center gap-3 ">
-            <div className="bg-white w-[640px] min-h-[420px] mt-8 rounded-xl border-t-8 border-[1px] border-gray-400 px-8 py-4">
+            <div className="bg-white w-full max-w-[640px] min-h-[420px] mt-8 rounded-xl border-t-8 border-[1px] border-gray-400 px-8 py-4">
               <Center className="pb-4">
                 <h1 className="font-extrabold text-2xl text-center">
                   Ficha de Inscrição
@@ -117,10 +117,10 @@ export default function Form() {
                 </p>
               </div>
             </div>
-            <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
+            <div className="bg-white w-full max-w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
               <Calendar />
             </div>
-            <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
+            <div className="bg-white w-full max-w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
               <Center>
                 <h3 className="font-bold">
                   Prencha com seus dados para confirmar a inscrição:
@@ -229,7 +229,7 @@ export default function Form() {
                 )}
               </div>
             </div>
-            <div className="bg-white w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
+            <div className="bg-white w-full max-w-[640px] rounded-2xl px-8 py-4 border-[1px] border-gray-400">
               <p className="text-[0.9rem]">
                 A sua inscrição fica confirmada após realização de pagamento por
                 transferência bancária (IBAN PT50 001802330020004509134 ) ou
@@ -265,9 +265,9 @@ export default function Form() {
                 )}
               </div>
             </div>
-            <div className="bg-white w-[640px] mb-8 rounded-2xl px-4 py-4 border-[1px] border-gray-400">
-              <div className="flex justify-center bg-[rgba(244,244,244,0.60)] rounded-md">
-                <div className="flex items-end">
+            <div className="bg-white w-full max-w-[640px] mb-8 rounded-2xl px-4 py-4 border-[1px] border-gray-400">
+              <div className="flex flex-col tablet:flex-row justify-center bg-[rgba(244,244,244,0.60)] rounded-md">
+                <div className="flex justify-center">
                   <div className="w-[200px] h-[260px] rounded-t-full flex justify-center">
                     <div className=" rounded-full mt-3 flex justify-center items-center">
                       <div className="flex flex-col justify-center rounded-full w-[180px] h-[180px] mb-300px">
@@ -329,8 +329,9 @@ export default function Form() {
               color="#fff"
               borderColor="#c47"
               _hover={{ background: "#688AB6", color: "#fff" }}
-              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-                }`} // Desativa o botão se estiver enviando
+              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${
+                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+              }`} // Desativa o botão se estiver enviando
             >
               ENVIAR A MINHA INSCRIÇÃO
             </Button>
