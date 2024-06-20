@@ -143,10 +143,9 @@ apresentar, com a devida antecedência.
 Após o término da formação poderá ter acesso ao Certificado da Formação elaborado pelo
 Consultório de Psicologia Filomena Leitão.</p>
           </br>
-          <p>Esta formação não foi submetida à Ordem dos Psicólogos Portugueses (OPP), pelo que não
-está creditado por esta entidade.</p>
-        </div>
-        
+          <p>Esta formação foi submetida à Ordem dos Psicólogos Portugueses (OPP) para analise de acreditação, pelo que a 1º edição ainda não
+está acreditada por esta entidade.</p>
+        </div> 
       `,
     },
   ];
