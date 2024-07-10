@@ -93,7 +93,7 @@ export default function Home() {
               width="1000"
               height="460"
               alt="banner-formação"
-              src="/banner-image.png"
+              src="/banner-image.jpg"
             />
           </Link>
         </ModalContent>
