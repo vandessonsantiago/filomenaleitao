@@ -5,8 +5,6 @@ import { Providers } from "@/app/hooks/providers";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
-import image from "./opengraph-image.png";
-
 export const metadata: Metadata = {
   title: "Gabinete de Pisicologia - Filomena Leitão",
   description:
@@ -18,7 +16,7 @@ export const metadata: Metadata = {
       "Gabinete de Psicologia Filomena Leitão, um espaço dedicado a você! Aqui, você se sentirá seguro e apoiado.",
     images: [
       {
-        url: image.src,
+        url: "./opengraph-image.png",
       },
     ],
   },
