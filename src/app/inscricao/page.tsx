@@ -30,7 +30,6 @@ export default function Form() {
       nomeCompleto: dataRegister.nomeCompleto,
       email: dataRegister.email,
       telemovel: dataRegister.telemovel,
-      mensagem: dataRegister.mensagem,
       nif: dataRegister.nif,
     };
     console.log(formData);
@@ -121,31 +120,6 @@ export default function Form() {
                 />
                 {errors.telemovel?.type === "required" && (
                   <span className="text-red-400">Este campo é obrigatório</span>
-                )}
-              </div>
-              <div className="flex flex-col my-4">
-                <label
-                  htmlFor="mensagem"
-                  className="pb-2 text-xs font-semibold"
-                >
-                  Descreva de forma sucinta as razões para se inscrever nesta
-                  formação:
-                </label>
-                <textarea
-                  id="mensagem"
-                  {...register("mensagem", {
-                    required: true,
-                    maxLength: 750, // Adicionando a validação de limite de caracteres
-                  })}
-                  className="border-2 border-[#c47b4e] p-2 rounded h-48"
-                ></textarea>
-                {errors.mensagem?.type === "required" && (
-                  <span className="text-red-400">Este campo é obrigatório</span>
-                )}
-                {errors.mensagem?.type === "maxLength" && (
-                  <span className="text-red-400">
-                    Limite máximo de 750 caracteres
-                  </span>
                 )}
               </div>
             </div>
