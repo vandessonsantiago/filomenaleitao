@@ -76,12 +76,21 @@ export default function Form() {
                   <span className="text-red-400">Este campo é obrigatório</span>
                 )}
                 {errors.nomeCompleto?.type === "pattern" && (
-                  <span className="text-red-400">Insira um nome válido</span>
+                  <span className="text-red-400">
+                    Introduza um nome válido - verifique espaços em branco após
+                    introduza nome e apelido. Ex: Miguel Pereira - ✅,
+                    MiguelPereira - ❌, "Miguel Pereira " - ❌.
+                  </span>
                 )}
 
                 {errors.nomeCompleto?.type === "minLength" && (
-                  <span className="text-red-400">Insira um nome válido</span>
+                  <span className="text-red-400">
+                    Introduza um nome válido - verifique espaços em branco após
+                    introduzir nome e apelido. Ex: Miguel Pereira - ✅,
+                    MiguelPereira - ❌, "Miguel Pereira " - ❌.
+                  </span>
                 )}
+
                 {errors.nomeCompleto?.type === "maxLength" && (
                   <span className="text-red-400">
                     O nome deve ter no máximo 100 caracteres
@@ -104,7 +113,11 @@ export default function Form() {
                   <span className="text-red-400">Este campo é obrigatório</span>
                 )}
                 {errors.email?.type === "pattern" && (
-                  <span className="text-red-400">Insira um email válido</span>
+                  <span className="text-red-400">
+                    Introduza um email válido - verifique espaços em branco após
+                    introduzir o email. Ex: miguelpereira@mail.pt - ✅,
+                    "miguelpereira@mail.pt " - ❌.
+                  </span>
                 )}
               </div>
               <div className="flex flex-col my-4">
@@ -223,9 +236,8 @@ export default function Form() {
               color="#fff"
               borderColor="#c47"
               _hover={{ background: "#688AB6", color: "#fff" }}
-              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${
-                isSubmitting ? "opacity-50 cursor-not-allowed" : ""
-              }`} // Desativa o botão se estiver enviando
+              className={`py-2 px-10 border-2 border-[#B0A889] rounded-md cursor-pointer font-bold text-[#B0A889] ${isSubmitting ? "opacity-50 cursor-not-allowed" : ""
+                }`} // Desativa o botão se estiver enviando
             >
               ENVIAR A MINHA INSCRIÇÃO
             </Button>
