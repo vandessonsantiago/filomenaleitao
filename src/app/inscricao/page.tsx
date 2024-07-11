@@ -79,7 +79,7 @@ export default function Form() {
                   <span className="text-red-400">
                     Introduza um nome válido - verifique espaços em branco após
                     introduza nome e apelido. Ex: Miguel Pereira - ✅,
-                    MiguelPereira - ❌, "Miguel Pereira " - ❌.
+                    MiguelPereira - ❌, &quot;Miguel Pereira &quot; - ❌.
                   </span>
                 )}
 
@@ -87,7 +87,7 @@ export default function Form() {
                   <span className="text-red-400">
                     Introduza um nome válido - verifique espaços em branco após
                     introduzir nome e apelido. Ex: Miguel Pereira - ✅,
-                    MiguelPereira - ❌, "Miguel Pereira " - ❌.
+                    MiguelPereira - ❌, &quot;Miguel Pereira &quot; - ❌.
                   </span>
                 )}
 
@@ -116,7 +116,7 @@ export default function Form() {
                   <span className="text-red-400">
                     Introduza um email válido - verifique espaços em branco após
                     introduzir o email. Ex: miguelpereira@mail.pt - ✅,
-                    "miguelpereira@mail.pt " - ❌.
+                    &quot;miguelpereira@mail.pt &quot; - ❌.
                   </span>
                 )}
               </div>
